@@ -1,4 +1,11 @@
 public class Basic{
+    int id;
+    String name;
+
+    void showDetails(){
+        System.out.println("Id:"+id);
+        System.out.println("Name:"+name);
+    }
     public static void main(String[] args){
         int age=25;
         double salary=55000.7523456789123;
@@ -11,7 +18,7 @@ public class Basic{
         long population=6000000000000000L;
 
         int[] numbers={10,20,30,40,50};
-
+        
         
     
 
@@ -29,7 +36,12 @@ public class Basic{
         System.out.println("All element:");
         for(int i=0;i<numbers.length;i++){
             System.out.println(numbers[i]);
-        }
+        };
+        Basic s1 = new Basic();
+        s1.id=101;
+        s1.name="Charu";
+        s1.showDetails();
+
 
 
     }
