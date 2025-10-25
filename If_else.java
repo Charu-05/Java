@@ -41,15 +41,17 @@ public class If_else {
         int Social= mark.nextInt();
         System.out.println("Social :"+Social);
 
+        System.out.print(" Enter Attendance percentage: ");
+        int attendance=mark.nextInt();
+        System.out.println("Attendance percentage:"+attendance+"%");
+
+        System.out.println("_______________________________________");
+
         int Total=Tamil+English+Maths+Science+Social;
         System.out.println("Total-marks :" +Total);
 
         int average=Total/5;
         System.out.println("Average :" +average);
-
-        System.out.print(" Enter Attendance percentage: ");
-        int attendance=mark.nextInt();
-        System.out.println("Attendance percentage:"+attendance+"%");
 
         if (attendance>95){
            average+=5;
