@@ -31,6 +31,8 @@ public class loan_example {
     int cibil=loan.nextInt();
     System.out.println("Applicant cibil score ="+cibil);
 
+    System.out.println("---------------------------------------");
+
     if(age>30 && age<60){
 
         if(income>=50000){
