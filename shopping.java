@@ -33,7 +33,7 @@ public class shopping {
         System.out.println("----------------------------------------");
 
         if(amount>5000){
-            if(user.equals("Prime")){
+            if(user.equalsIgnoreCase("Prime")){
                 System.out.println("Prime users get 20% discount");
                 int discount=(amount*20)/100;
                 System.out.println("Discount (Rs): "+discount);
@@ -48,16 +48,16 @@ public class shopping {
             }
         }
         
-        else if(amount<5000 && amount>2000){
-            if(user.equals("Prime")){
+        else if(amount<=5000 && amount>2000){
+            if(user.equalsIgnoreCase("Prime")){
                 System.out.println("Prime users get 10% discount + free shipping");
-                int discount=(amount*20)/100;
+                int discount=(amount*10)/100;
                 System.out.println("Discount (Rs): "+discount);
                 int total=amount-discount;
                 System.out.println("Total price (Rs): "+total);
             }else{
                 System.out.println("Regular users get 5% discount + shipping Rs.100 extra");
-                int discount=(amount*10)/100;
+                int discount=(amount*5)/100;
                 System.out.println("Discount (Rs): "+discount);
                 int total=amount-discount+100;
                 System.out.println("Total price (Rs): "+total);
@@ -65,7 +65,7 @@ public class shopping {
         }
 
         else{
-            if(user.equals("Prime")){
+            if(user.equalsIgnoreCase("Prime")){
                 System.out.println("Prime users => no discount but free shipping");
                 int total=amount;
                 System.out.println("Total price (Rs): "+total);
