@@ -21,15 +21,12 @@ public class loan_example {
 
     System.out.print("Enter age :");
     int age=loan.nextInt();
-    System.out.println("Applicant Age :"+age);
 
     System.out.print("Enter monthly income (Rs.) :");
     double income=loan.nextDouble();
-    System.out.println("Apllicant income :"+income);
 
     System.out.print("Enter CIBIL score :");
     int cibil=loan.nextInt();
-    System.out.println("Applicant cibil score ="+cibil);
 
     System.out.println("---------------------------------------");
 
@@ -38,18 +35,18 @@ public class loan_example {
         if(income>=50000){
 
             if(cibil<750){
-                System.out.println("Loan approved! for " +name);
+                System.out.println("Loan approved! for you " +name);
             }
             else{
-                System.out.println("Loan Rejected => Low CIBIL score for "+name);
+                System.out.println("Loan Rejected => Low CIBIL score for you "+name);
             }
         }
         else{
-            System.out.println("Loan Rejected => Low income for "+name);
+            System.out.println("Loan Rejected => Low income for you "+name);
             }
         }
     else{ 
-        System.out.println("Loan Rejected => Age not eligible! for "+name);
+        System.out.println("Loan Rejected => Age not eligible! for you "+name);
    }
    loan.close();
                 

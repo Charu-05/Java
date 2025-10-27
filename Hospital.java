@@ -20,15 +20,12 @@ public class Hospital {
 
         System.out.print("Enter patient age :");
         int age=hsptl.nextInt();
-        System.out.println("Patient Age: "+age);
 
         System.out.print("Choose patient condition (Critical,Serious,Stable) :");
         String condition=hsptl.next();
-        System.out.println("Patient condition: "+condition);
 
         System.out.print("Choose insurance type (Premium, Basic, None) :");
         String insurance=hsptl.next();
-        System.out.println("Insurance type: "+insurance);
 
         System.out.println("------------------------------------------");
     

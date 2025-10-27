@@ -15,28 +15,24 @@ public class Atm {
         
         System.out.print("Choose Account Type => (Savings or Current)");
         String account = atm.next();
-        System.out.println("Account type: "+account);
 
         double balance=50000;
         System.out.println("Your account has balance: Rs."+balance);
 
         System.out.print("Enter the withdrawal amount: ");
         int withdrawal=atm.nextInt();
-        System.out.println("Withdrawal amount: Rs."+ withdrawal);
 
         System.out.print("Enter day of the week: ");
         String day=atm.next();
-        System.out.println("Day of week: "+day);
 
         System.out.println("------------------------------------");
         
         int serviceCharge=50;
+        
         if (day.equalsIgnoreCase("Sunday")) {
             serviceCharge = 50;
             System.out.println("Note=> Rs.50 Sunday service charge applied.");
         }
-
-    
 
         if(account.equalsIgnoreCase("Savings")){
            double minbalance=1000;

@@ -23,27 +23,21 @@ public class If_else {
        
         System.out.print("Tamil subject:");
         int Tamil= mark.nextInt();
-        System.out.println("Tamil :"+Tamil);
 
         System.out.print("English subject:");
         int English= mark.nextInt();
-        System.out.println("English :"+English);
 
         System.out.print("Maths subject:");
         int Maths= mark.nextInt();
-        System.out.println("Maths :"+Maths);
 
         System.out.print("Science  subject:");
         int Science= mark.nextInt();
-        System.out.println("Science :"+Science);
 
         System.out.print("Social subject:");
         int Social= mark.nextInt();
-        System.out.println("Social :"+Social);
 
-        System.out.print(" Enter Attendance percentage: ");
+        System.out.print(" Enter Attendance percentage (%): ");
         int attendance=mark.nextInt();
-        System.out.println("Attendance percentage:"+attendance+"%");
 
         System.out.println("_______________________________________");
 
